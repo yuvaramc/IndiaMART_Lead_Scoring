@@ -1,0 +1,17 @@
+CUSTOMER CHURN MODEL SUMMARY
+
+Model: Logistic Regression
+Dataset: customer_features.csv
+Customers: 200
+
+SCORE 60 THRESHOLD
+Customers flagged: 7
+True Positives: 5
+False Positives: 2
+True Negatives: 192
+False Negatives: 1
+False Positive Rate: 1.03%
+Recall: 83.33%
+
+Acceptance Criterion
+False Positive Rate < 25%: PASS
