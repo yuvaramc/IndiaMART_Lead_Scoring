@@ -1,0 +1,102 @@
+INDIA MART B2B – CHECKPOINT 3
+DEEP-DIVE ANALYSIS
+
+1. Objective
+
+The objective of this analysis was to conduct a customer-level deep-dive using the available customer, sales transaction, and product data. The analysis focused on customer segmentation, revenue behavior, acquisition channels, city-level performance, and churn patterns.
+
+2. Data Used
+
+The analysis used the cleaned customer-level dataset created from the available project data.
+
+Records analyzed: 200 customers.
+
+The dataset contains customer transaction, revenue, purchase behavior, acquisition channel, location, and churn information.
+
+3. Methodology
+
+The following steps were performed:
+
+* Customer-level features were created from transaction data.
+* Customers were segmented into Low Revenue, Medium Revenue, and High Revenue groups using revenue quantiles.
+* Customer acquisition channels were compared using revenue, transaction, return-rate, and churn metrics.
+* Churned and active customers were compared across revenue, units, discounts, returns, and order counts.
+* Customer performance was also analyzed by city.
+* Summary tables and visualizations were generated from the analysis.
+
+4. Customer Segmentation Findings
+
+The 200 customers were divided into three revenue segments:
+
+* Low Revenue: 66 customers
+* Medium Revenue: 66 customers
+* High Revenue: 68 customers
+
+The High Revenue segment generated approximately ₹36.68 lakh in total net revenue.
+
+The Medium Revenue segment generated approximately ₹25.89 lakh.
+
+The Low Revenue segment generated approximately ₹17.65 lakh.
+
+5. Churn Analysis
+
+There were 6 churned customers out of 200 customers, representing a 3% overall churn rate.
+
+A notable difference was observed in order history:
+
+* Active customers averaged approximately 11.86 total orders.
+* Churned customers averaged 1 total order.
+
+This indicates that order activity is an important descriptive indicator of customer engagement in this dataset.
+
+Because only 6 customers were marked as churned, churn-related findings should be treated as exploratory rather than statistically conclusive.
+
+6. Acquisition Channel Analysis
+
+Customers were analyzed across four acquisition channels:
+
+* App
+* Marketplace
+* Offline
+* Website
+
+The analysis compared customer counts, average revenue, average transactions, return rate, and churn rate across these channels.
+
+7. City Analysis
+
+Customer performance was analyzed across:
+
+* Bangalore
+* Chennai
+* Delhi
+* Hyderabad
+* Mumbai
+* Pune
+
+The analysis calculated customer counts, total revenue, average revenue, and churn rate for each city.
+
+8. Assumptions and Limitations
+
+* The available project data does not contain the lead-specific fields described in the project brief, such as industry, company size, enquiry type, response time, and RFQ count.
+* Therefore, this analysis does not claim to be the required lead-scoring logistic regression model.
+* Customer segmentation was performed using revenue quantiles.
+* Churn analysis is descriptive because only 6 of the 200 customers are labelled as churned.
+* The findings should be interpreted as an exploratory customer analytics deep-dive based on the supplied datasets.
+
+9. Output Files
+
+The analysis generated the following files:
+
+* revenue_segment_summary.csv
+* acquisition_channel_analysis.csv
+* churn_analysis.csv
+* city_analysis.csv
+* revenue_by_segment.png
+* churn_distribution.png
+* customer_segments.csv
+
+10. Conclusion
+
+The deep-dive analysis identified differences in customer revenue segments, acquisition channels, cities, and customer engagement patterns.
+
+The strongest descriptive pattern was the difference in order history between active and churned customers. The analysis provides a structured customer analytics deep-dive while clearly documenting the limitation that the supplied datasets do not contain the lead-level variables required for the project's lead-scoring model.
